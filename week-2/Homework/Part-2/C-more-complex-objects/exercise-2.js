@@ -6,6 +6,7 @@ Follow the instructions below and then run the file and make sure it outputs the
 
 let house = {
   address: "1 Kinning Park",
+  isForSale: false,
   previousOwners: ["Claire M.", "John A."],
   currentOwner: {
     firstName: "Margaret",
@@ -31,6 +32,10 @@ let newCurrentOwner = {
 /*
   DO NOT EDIT ANYTHING BELOW THIS LINE
 */
+house.currentOwner = newCurrentOwner;
+house.previousOwners[1] = ["Stephen B."];
+
+
 console.log(
   `Did you correctly assign the new owner using the given variable?","Expected result: true. Actual result: " ${
     house.currentOwner === newCurrentOwner

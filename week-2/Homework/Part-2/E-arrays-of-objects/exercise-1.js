@@ -25,11 +25,21 @@ WRITE YOUR CODE BELOW
 */
 
 
-let persons = // Complete here
+let persons = ["Alice, 25", "Bob, 30", "John, 20"];
+let newArr = persons.split(",");
+console.log(newArr);
 
-let personNames = // Complete here
+let personNames = newArr.map();
 
-let personsYoungerThan28YearsOld = // Complete here
+
+function youngerthan28(value) {
+    if(value[1] < 28) {
+        return value;
+    }
+};
+
+let personsYoungerThan28YearsOld = persons.filter(youngerthan28);
+
 
 
 /*

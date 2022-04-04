@@ -18,7 +18,9 @@ Write JavaScript below that logs:
 //1. all the "p" element nodes of the document,should log a list of nodes with a length of 6 - DONE
 let allP= document.getElementsByTagName("p");
 for (let i = 0; i < allP.length; i++ ) {
-    console.log(allP[i]);
+    if (allP.length == 6) {
+        console.log(allP[i]);  
+    }
 };
 
 

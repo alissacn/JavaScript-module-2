@@ -16,8 +16,17 @@ let coffeeMachine = {
       flatWhite: 3.0,
     },
     insertedAmount: 0,
-    insertMoney: function (amount) {},
-    getCoffee: function (coffee) {},
+    insertMoney: function (amount) {
+      for (values in amount) {
+        values = insertedAmount + values;
+      }
+    },
+       
+    getCoffee: function (coffee) {
+      if (coffee >= coffee.prices) {
+        return coffee;
+      }
+    },
   };
   
   /*

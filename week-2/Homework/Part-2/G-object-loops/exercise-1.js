@@ -7,7 +7,18 @@ const studentGrades = {
     george: 17,
     abdul: 19,
   };
-  
+
+
+for (const key in studentGrades) { //acessa os valores da chave
+  if (studentGrades[key] > 18) { //se o value for menor que 18
+    console.log(`${key} = ${studentGrades[key]}`); //imprime a key e o value.
+  }
+};
+
+
+
+
+
   // Prints
   // TOM - 20
   // ABDUL - 19

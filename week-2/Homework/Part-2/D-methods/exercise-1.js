@@ -9,7 +9,11 @@ A person named Alice is defined below.
 let person = {
     name: "Alice",
     age: 25,
+    greet: () => console.log("Hello everybody"),
+    sayName: () => console.log(`My name is ${person.name}`),
   };
+
+
   
   /*
   DO NOT EDIT ANYTHING BELOW THIS LINE

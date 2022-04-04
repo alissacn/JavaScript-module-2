@@ -8,5 +8,12 @@ var kitten = {
     furColour: "brown"
 };
 
+let age = kitten.ageMonths;
+let gender = kitten.isFemale;
+let color = kitten.furColour;
+
 // YOUR CODE HERE
+console.log(age);
+console.log(gender);
+console.log(color);
 

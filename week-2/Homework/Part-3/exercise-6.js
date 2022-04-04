@@ -100,4 +100,4 @@ var mentors = [
 ];
 
 //YOUR CODE HERE
-
+"Hi, my name is {firstName} {lastName}. I work in Barcelona and i know React."
