@@ -1,1 +1,33 @@
 /** Write your CSS in here **/
+#img-container {
+    display: flex;
+    justify-content: center;
+}
+
+#image1 {
+    border-radius: 20px;
+}
+
+#div-button {
+    text-align: center;  
+}
+
+button {
+    background-color: violet;
+    color: white;
+    font-size: 20px;
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:pink;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: rgb(241, 38, 241);
+}
+   

@@ -59,7 +59,17 @@ var movies = [
 ];
 
 // create showMovies function
+function showMovies(movies) {
+  let divMovie = document.querySelector("#all-movies");
+  movies.forEach(movie => {
+    const createPelement = document.createElement("p");
+    createPelement.textContent = movie.tile, movie.director;
+    divMovie.appendChild(createPelement);
 
+  });
+}
+
+showMovies(movies);
 
 // create a new movie object for your favorite movie
 
