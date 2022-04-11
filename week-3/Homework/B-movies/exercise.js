@@ -59,19 +59,49 @@ var movies = [
 ];
 
 // create showMovies function
-function showMovies(movies) {
+function showMovies(movieArray) {
   let divMovie = document.querySelector("#all-movies");
-  movies.forEach(movie => {
-    const createPelement = document.createElement("p");
-    createPelement.textContent = movie.tile, movie.director;
-    divMovie.appendChild(createPelement);
+  let divLenght = document.querySelector("#movies-number");
+  divLenght.textContent = movies.length;
+  
+  movieArray.forEach(element => {
+    const movieTitle = document.createElement("p");
+    movieTitle.textContent = `Movie: ${element.title} / Director:  ${element.director}`;
+    divMovie.appendChild(movieTitle);
 
   });
+
+};
+
+const newMovie = {
+  title: "Interestelar",
+  director: "Christopher Nolan",
+  type: "Sci-Fi",
+  haveWatched: true,
+};
+
+const addMovie = (movie) => {
+  setTimeout(() => {
+    movies.push(newMovie);
+    showMovies(movies);
+  }, 2000);
 }
 
-showMovies(movies);
+
+addMovie(movies);
 
 // create a new movie object for your favorite movie
+
+
+
+
+
+
+
+
+
+
+
 
 
 // create addMovies function
